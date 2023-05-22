@@ -4,11 +4,11 @@ public class Nodo {
 
     private int element;
     private Nodo next;
-    private Nodo previous;
+
 
     public Nodo(int element) {
         this.element = element;
-        this.next = previous = null;
+        this.next = null;
     }
 
     public Nodo getNext() {
@@ -17,9 +17,6 @@ public class Nodo {
     public int getElement() {
         return element;
     }
-    public Nodo getPrevious() {
-        return previous;
-    }
     public void setElement(int element) {
         this.element = element;
     }
@@ -27,7 +24,5 @@ public class Nodo {
     public void setNext(Nodo next) {
         this.next = next;
     }
-    public void setPrevious(Nodo previous) {
-        this.previous = previous;
-    }
+
 }
